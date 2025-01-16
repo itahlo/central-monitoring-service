@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.italo.warehouseservice.service.CentralMonitoringServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-01-16T18:38:17" hostname="Italos-MacBook-Pro.local" time="0.405">
+  <properties/>
+  <testcase name="testTemperatureExactlyAtThresholdNoAlarm()" classname="com.italo.warehouseservice.service.CentralMonitoringServiceTest" time="0.4"/>
+  <testcase name="testHumidityBelowThresholdNoAlarm()" classname="com.italo.warehouseservice.service.CentralMonitoringServiceTest" time="0.002"/>
+  <testcase name="testTemperatureAboveThresholdTriggersAlarm()" classname="com.italo.warehouseservice.service.CentralMonitoringServiceTest" time="0.003"/>
+  <system-out><![CDATA[18:38:17.037 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.italo.warehouseservice.service.CentralMonitoringServiceTest]: CentralMonitoringServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:38:17.087 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.italo.warehouseservice.WarehouseServiceApplication for test class com.italo.warehouseservice.service.CentralMonitoringServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2025-01-16T18:38:17.226Z  INFO 39896 --- [    Test worker] c.i.w.s.CentralMonitoringServiceTest     : Starting CentralMonitoringServiceTest using Java 21.0.5 with PID 39896 (started by italo in /Users/italo/Documents/work/personal/warehouse-service)
+2025-01-16T18:38:17.227Z  INFO 39896 --- [    Test worker] c.i.w.s.CentralMonitoringServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2025-01-16T18:38:17.692Z  INFO 39896 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-01-16T18:38:17.715Z  INFO 39896 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#789c3057:0/SimpleConnection@6afbe6a1 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64400]
+2025-01-16T18:38:17.743Z  INFO 39896 --- [    Test worker] c.i.w.s.CentralMonitoringServiceTest     : Started CentralMonitoringServiceTest in 0.612 seconds (process running for 1.04)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/italo/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.15.11/a38b16385e867f59a641330f0362ebe742788ed8/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.italo.warehouseservice.service.WarehouseServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-16T18:38:21" hostname="Italos-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="testPublishMeasurement()" classname="com.italo.warehouseservice.service.WarehouseServiceTest" time="0.008"/>
+  <system-out><![CDATA[2025-01-16T18:38:21.452Z  INFO 39896 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.italo.warehouseservice.service.WarehouseServiceTest]: WarehouseServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-16T18:38:21.455Z  INFO 39896 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.italo.warehouseservice.WarehouseServiceApplication for test class com.italo.warehouseservice.service.WarehouseServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2025-01-16T18:38:21.463Z  INFO 39896 --- [    Test worker] c.i.w.service.WarehouseServiceTest       : Starting WarehouseServiceTest using Java 21.0.5 with PID 39896 (started by italo in /Users/italo/Documents/work/personal/warehouse-service)
+2025-01-16T18:38:21.463Z  INFO 39896 --- [    Test worker] c.i.w.service.WarehouseServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2025-01-16T18:38:21.771Z  INFO 39896 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-01-16T18:38:21.778Z  INFO 39896 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#82382d1:0/SimpleConnection@1f4fa465 [delegate=amqp://guest@127.0.0.1:5672/, localPort=64409]
+2025-01-16T18:38:21.789Z  INFO 39896 --- [    Test worker] c.i.w.service.WarehouseServiceTest       : Started WarehouseServiceTest in 0.333 seconds (process running for 5.086)
+[WarehouseService] Published measurement: t1 value=30.0 type=temperature
+]]></system-out>
+  <system-err><![CDATA[UDP socket could not be opened on port 3355: Address already in use
+UDP socket could not be opened on port 3344: Address already in use
+]]></system-err>
+</testsuite>

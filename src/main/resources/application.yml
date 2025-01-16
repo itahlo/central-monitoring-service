@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+warehouse:
+  temperatureThreshold: 35
+  humidityThreshold: 50
+  # Ports for UDP listening
+  udp:
+    temperaturePort: 3344
+    humidityPort: 3355

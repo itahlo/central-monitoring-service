@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.italo.warehouseservice.WarehouseServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-16T18:38:21" hostname="Italos-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.italo.warehouseservice.WarehouseServiceApplicationTests" time="0.001"/>
+  <system-out><![CDATA[2025-01-16T18:38:18.155Z  INFO 39896 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.italo.warehouseservice.WarehouseServiceApplicationTests]: WarehouseServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-16T18:38:18.161Z  INFO 39896 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.italo.warehouseservice.WarehouseServiceApplication for test class com.italo.warehouseservice.WarehouseServiceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2025-01-16T18:38:18.173Z  INFO 39896 --- [    Test worker] c.i.w.WarehouseServiceApplicationTests   : Starting WarehouseServiceApplicationTests using Java 21.0.5 with PID 39896 (started by italo in /Users/italo/Documents/work/personal/warehouse-service)
+2025-01-16T18:38:18.174Z  INFO 39896 --- [    Test worker] c.i.w.WarehouseServiceApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-01-16T18:38:18.239Z  INFO 39896 --- [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-01-16T18:38:18.240Z  INFO 39896 --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-01-16T18:38:18.248Z  INFO 39896 --- [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.20.4
+2025-01-16T18:38:18.318Z  INFO 39896 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-01-16T18:38:18.432Z  INFO 39896 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-01-16T18:38:18.432Z  INFO 39896 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-01-16T18:38:18.446Z  INFO 39896 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 27.4.0
+  API Version: 1.47
+  Operating System: Docker Desktop
+  Total Memory: 7836 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/italo/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-01-16T18:38:18.531Z  INFO 39896 --- [    Test worker] tc.testcontainers/ryuk:0.11.0            : Creating container for image: testcontainers/ryuk:0.11.0
+2025-01-16T18:38:18.635Z  INFO 39896 --- [    Test worker] o.t.utility.RegistryAuthLocator          : Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-01-16T18:38:18.714Z  INFO 39896 --- [    Test worker] tc.testcontainers/ryuk:0.11.0            : Container testcontainers/ryuk:0.11.0 is starting: ed6d8931edee65c0ad3e99bb30393c39f9b59ff94403da2dda17f34a505c9c6f
+2025-01-16T18:38:18.965Z  INFO 39896 --- [    Test worker] tc.testcontainers/ryuk:0.11.0            : Container testcontainers/ryuk:0.11.0 started in PT0.433968S
+2025-01-16T18:38:18.968Z  INFO 39896 --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-01-16T18:38:18.968Z  INFO 39896 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-01-16T18:38:18.968Z  INFO 39896 --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-01-16T18:38:18.968Z  INFO 39896 --- [    Test worker] tc.rabbitmq:latest                       : Creating container for image: rabbitmq:latest
+2025-01-16T18:38:19.011Z  INFO 39896 --- [    Test worker] tc.rabbitmq:latest                       : Container rabbitmq:latest is starting: c30f58cd9c7714bcd5688117ad846a4792e2c6c5a4c33690eaab9b25fec5d083
+2025-01-16T18:38:21.363Z  INFO 39896 --- [    Test worker] tc.rabbitmq:latest                       : Container rabbitmq:latest started in PT2.394366S
+2025-01-16T18:38:21.431Z  INFO 39896 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:64403]
+2025-01-16T18:38:21.439Z  INFO 39896 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#58690f5e:0/SimpleConnection@bb38c49 [delegate=amqp://guest@127.0.0.1:64403/, localPort=64408]
+2025-01-16T18:38:21.448Z  INFO 39896 --- [    Test worker] c.i.w.WarehouseServiceApplicationTests   : Started WarehouseServiceApplicationTests in 3.286 seconds (process running for 4.745)
+]]></system-out>
+  <system-err><![CDATA[UDP socket could not be opened on port 3355: Address already in use
+UDP socket could not be opened on port 3344: Address already in use
+]]></system-err>
+</testsuite>
